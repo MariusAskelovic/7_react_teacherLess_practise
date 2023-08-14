@@ -5,6 +5,7 @@ import './hero.scss'
 
 export default function Hero() {
     const [emailInput, setEmailInput] = useState('')
+    const [hideStatus, setHideStatus] = useState(false)
 
     function handleEmailInput(event) {
         setEmailInput(event.target.value)
