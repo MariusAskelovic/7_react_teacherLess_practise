@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+
+  .headerUl {
+    display: flex;
+    gap: 3rem;
+    font-size: 1rem;
+  }
+  .emptyBtn {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+  .headerBtn {
+    padding: 0.8rem 1.6rem;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    line-height: 20px;
+    border: none;
+  }
+  .greenBtn {
+    background-color: var(--green-color);
+    color: white;
+    font-size: 14px;
+  }
+}
