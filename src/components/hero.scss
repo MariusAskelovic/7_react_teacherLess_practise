@@ -14,7 +14,11 @@
     gap: 24px;
     text-align: center;
     max-width: 747px;
+    padding: 88px 0;
 
+    * {
+      margin: 0;
+    }
     .pill {
       color: white;
       background-color: var(--green-medium);
@@ -28,20 +32,31 @@
     }
     .heroSubtitle {
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 500;
       line-height: 30px;
-      color: var(--gray-light);
+      color: var(--gray-v-light);
     }
     .heroInputBtnSection {
       display: flex;
+      margin-bottom: 16px;
+      gap: 16px;
     }
     .heroEmail {
       width: 320px;
+      font-family: var(--primary-font);
     }
-    .greenBtn {
+    .heroBtn {
       background-color: var(--green-medium);
       color: white;
       padding: 16px 28px;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: var(--primary-font);
+    }
+    .heroBonusInfo {
+      color: var(--gray-v-light);
+      font-size: 14px;
+      font-weight: 500;
     }
   }
 }
