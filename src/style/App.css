@@ -25,10 +25,19 @@ body {
   line-height: 18px;
   padding: 2px 8px;
   border-radius: 36px;
+  display: inline-block;
 }
 
-.bumbum {
-  padding: 50px;
-  background-color: red;
-  color: blue;
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  color: var(--gray-medium);
+}
+.sectionSubtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--gray-light);
 }
