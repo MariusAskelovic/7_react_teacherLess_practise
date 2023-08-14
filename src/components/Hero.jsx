@@ -5,22 +5,13 @@ import './hero.scss'
 
 export default function Hero() {
     const [emailInput, setEmailInput] = useState('')
-    const [hideStatus, setHideStatus] = useState(false)
 
     function handleEmailInput(event) {
         setEmailInput(event.target.value)
     }
 
     function handleBtnClick() {
-        alert(`sveikiname prisijungus ${emailInput}`)
-        setHideStatus(true)
-    }
-
-    function validateEmail() {
-        if (emailInput === '') {
-            return alert('please enter email')
-        }
-        handleBtnClick();
+        console.log('emailas :', emailInput);
     }
 
     // KODEL EMAIL NEDARO VALIDACIJOS ????????
