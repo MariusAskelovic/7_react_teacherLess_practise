@@ -1,12 +1,27 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 :root {
-  --primary-color: #556987;
-  --green-color: #22c55e;
+  --gray-light: #556987;
+  --gray-medium: #2a3342;
+  --gray-dark: #212935;
+  --green-light: #dcfce7;
+  --green-medium: #22c55e;
+
   --primary-font: 'Poppins', sans-serif;
 }
 
 body {
   color: var(--primary-color);
+}
+
+.pill {
+  background-color: var(--green-light);
+  color: var(--green-medium);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 36px;
 }

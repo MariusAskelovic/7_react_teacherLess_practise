@@ -2,7 +2,7 @@ import './header.scss'
 
 export default function Header() {
     return (
-        <div className="container header">
+        <div className="header">
             <img src="/images/Logo.svg" alt="logo" className="logo" />
             <ul className='headerUl'>
                 <li><a href="#">Product</a></li>
