@@ -11,8 +11,8 @@ export default function Header() {
                 <li><a href="#">Resources</a></li>
             </ul>
             <div>
-                <button className='emptyBtn headerBtn'>Log in</button>
-                <button className='greenBtn headerBtn'>Sign Up</button>
+                <button className='emptyBtn headerBtn'><a href='#'>Log In</a></button>
+                <button className='greenBtn headerBtn'><a href='#'>Sign Up</a></button>
             </div>
         </div>
     )
