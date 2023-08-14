@@ -11,7 +11,15 @@ export default function Hero() {
     }
 
     function handleBtnClick() {
-        console.log('emailas :', emailInput);
+        alert(`sveikiname prisijungus ${emailInput}`)
+        setHideStatus(true)
+    }
+
+    function validateEmail() {
+        if (emailInput === '') {
+            return alert('please enter email')
+        }
+        handleBtnClick();
     }
 
     // KODEL EMAIL NEDARO VALIDACIJOS ????????
