@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Subhero from './components/Subhero';
 import Features from './components/Features';
 import Features2 from './components/Features2';
+import Features3 from './components/Features3';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       {true && <Subhero />}
       {true && <Features />}
       {true && <Features2 />}
+      {true && <Features3 />}
     </div>
   )
 }

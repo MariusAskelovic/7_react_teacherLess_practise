@@ -1,0 +1,18 @@
+.features3 {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+
+  .features3BigImg {
+    width: 555px;
+    height: 555px;
+  }
+  .heroBtn {
+    background-color: var(--green-medium);
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+  }
+}
