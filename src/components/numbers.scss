@@ -1,0 +1,14 @@
+.numbers {
+  text-align: center;
+  .sectionSubtitle {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .numbersCounter {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

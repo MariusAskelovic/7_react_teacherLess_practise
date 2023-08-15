@@ -1,0 +1,16 @@
+.counterBlock {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--green-medium);
+    margin: 0;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--gray-light);
+  }
+}
