@@ -1,44 +1,52 @@
-.features2Details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  gap: 99px;
-  margin-bottom: 100px;
+.features2 {
+  .sectionSubtitle {
+    max-width: 920px;
+    margin-bottom: 80px;
+  }
 
-  .features2Grid {
-    display: flex;
-    flex-direction: column;
-  }
-  .features2Grid img {
-    width: 56px;
-    height: 56px;
-    margin-top: 10px;
-  }
-  .features2OneCard {
-    display: flex;
-    gap: 20px;
-  }
-  .features2OneCardText {
-    margin-top: 20px;
-  }
-  .features2CardTitle {
-    color: var(--gray-medium);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    margin-bottom: 14px;
-  }
-  .features2CardParagraph {
-    color: var(--gray-light);
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .features2BigImg {
-    height: 555px;
-    width: 555px;
-    object-fit: cover;
-    border-radius: 20px;
+  .features2Details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    gap: 99px;
+    margin-bottom: 100px;
+    text-align: left;
+
+    .features2Grid {
+      display: flex;
+      flex-direction: column;
+    }
+    .features2Grid img {
+      width: 56px;
+      height: 56px;
+      margin-top: 10px;
+    }
+    .features2OneCard {
+      display: flex;
+      gap: 20px;
+    }
+    .features2OneCardText {
+      margin-top: 20px;
+    }
+    .features2CardTitle {
+      color: var(--gray-medium);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      margin-bottom: 14px;
+    }
+    .features2CardParagraph {
+      color: var(--gray-light);
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .features2BigImg {
+      height: 555px;
+      width: 555px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
   }
 }

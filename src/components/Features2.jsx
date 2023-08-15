@@ -1,14 +1,28 @@
 
 import SectionTitle from "./SectionTitle";
 import './features2.scss'
+import gainCards from "./data/gainCards";
+import { useEffect, useState } from "react";
+
 
 export default function Features2() {
+    const [gainCard, setGainCard] = useState([])
+
+    useEffect(() => {
+        filterArr();
+    }, [])
+
+    function filterArr() {
+        const newArr = gainCards.filter((obj) => obj.id === 1 || obj.id === 4 || obj.id === 5)
+        setGainCard(newArr)
+    }
+
     return (
-        <div className="container">
+        <div className="container features2">
             <SectionTitle
                 pill='FEATURES'
                 title='Gain more insight into how people use your'
-                subtitle='With out integrated CRM, project managemenet, collaboration and invoicing capabilities,${}
+                subtitle='With out integrated CRM, project managemenet, collaboration and invoicing capabilities,
                 you can manage every aspect of your business in one secure platform'
 
                 pillClass="pill"
@@ -17,7 +31,16 @@ export default function Features2() {
             />
             <div className="container features2Details">
                 <div className="features2Grid">
-                    <div className="features2OneCard">
+                    {gainCard.map(obj => (
+                        <div className="features2OneCard" key={obj.id}>
+                            <img src={obj.icon} alt={obj.title} className="gainCardIcon" />
+                            <div className="features2OneCardText">
+                                <h3 className="features2CardTitle">{obj.title}</h3>
+                                <p className="features2CardParagraph">{obj.descr}</p>
+                            </div>
+                        </div>
+                    ))}
+                    {/* <div className="features2OneCard">
                         <img src="./images/iconEnvelope.png" alt="envelope" />
                         <div className="features2OneCardText">
                             <h3 className="features2CardTitle">Measure your performance</h3>
@@ -37,8 +60,9 @@ export default function Features2() {
                             <h3 className="features2CardTitle">Connect multiple apps</h3>
                             <p className="features2CardParagraph">The first business platform to bring together all of your products from one place.</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
+
                 <img className="features2BigImg" src="./images/imageHandbook.png" alt="handbook" />
             </div>
         </div>
