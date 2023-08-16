@@ -6,6 +6,7 @@ import Features from './components/Features';
 import Features2 from './components/Features2';
 import Features3 from './components/Features3';
 import Numbers from './components/Numbers';
+import HowItWorks from './components/HowItWorks';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       {true && <Features2 />}
       {true && <Features3 />}
       {true && <Numbers />}
+      {true && <HowItWorks />}
     </div>
   )
 }
