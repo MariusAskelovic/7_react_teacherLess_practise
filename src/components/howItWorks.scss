@@ -1,0 +1,20 @@
+.howItWorks {
+  display: flex;
+  flex-direction: column;
+
+  .titleSection {
+    display: flex;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    max-width: 555px;
+  }
+  .listSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
